@@ -1,0 +1,124 @@
+
+  .navbar {
+    background-color: $light;  
+    color: $light;  
+    padding: 10px 20px;  
+    box-shadow: 0 2px 4px rgba($primary, 0.2);
+    a {  
+      color: $secondary;  
+      text-decoration: none;  
+      padding: 10px;
+    }
+  }
+
+  .navbar .navbar-brand {
+    font-size: 24px;  
+    font-weight: bold;  
+    color: $primary !important;
+    position: sticky;
+  }
+
+  .nav-link {
+    color: $secondary;  
+    font-weight: 600;
+    &:hover {  
+      color: $primary;  
+    }  
+    &:focus {  
+      color: $primary;  
+    }
+  }
+
+  .active {
+    color: $primary !important;
+  }
+
+  .navbar-toggler { 
+    border: none;
+    &:focus {  
+      outline: none;  
+      box-shadow: 0 0 5px rgba($primary, 0.5);  
+    }
+
+    .navbar-toggler-icon {  
+      color: $secondary;  
+    }
+  }
+
+  .hero-section {
+    background-image: linear-gradient(rgba($dark, 0.5), rgba(black, 0.5)), url('../images/coffee-beans.jpg');  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: lighten($secondary, 10%);
+    
+  }
+
+  .card-img-top {
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  .menu-section {
+    background-color: $secondary;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    color: $dark;
+  }
+
+  .about-section {
+    background-color: $light;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    color: $dark;
+
+    & img {
+      width: 30rem;
+      height: 35rem;
+      object-fit: cover;
+
+    }
+
+    .about-img {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .contact-section {
+    color: $light;
+    background-color: $primary;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    .card, .card-body {
+      color: $dark;
+      border-radius: 2rem;
+      background-color: $light;
+
+      .form-control {
+        background-color: $light;
+        border: 1px solid $secondary;
+        color: $secondary;
+        &:focus {
+          background-color: $light;
+          border: 1px solid $primary;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero-section {
+      height: 50vh;
+    }
+    .about-section img {
+      width: 20rem;
+      height: 25rem;
+    }
+    
+  }

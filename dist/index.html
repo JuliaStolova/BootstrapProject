@@ -1,12 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zahrádky</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Coffee Haven</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+
+<body class="poppins-regular">
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"> <i class="fas fa-mug-hot text-primary me-2"></i>Coffee Haven</a>
+                
+                <!-- Hamburger button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline-primary ms-lg-3">Book a Table</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section home">
+            <div class="contrainer d-flex align-items-center">
+                <div class="container text-center">
+                    <h1 class="display-3 fw-bold mb-4">Artisan Coffee Experience</h1>
+                    <p class="lead mb-5">Discover the finest coffee blends and artisanal pastries.</p>
+                    <div class="d-flex gap-3 justify-content-center">
+                        <a href="#menu" class="btn btn-outline-secondary btn-lg px-4">View Menu</a>
+                        <a href="#contact" class="btn btn-outline-secondary btn-lg px-4">Visit Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <div class="container text-center">
+                <h2 class="display-4 mb-4 poppins-bold">Our Menu</h2>
+                <p class="lead mb-5 poppins-medium">Explore our selection of premium coffees and delicious pastries.</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="images/coffee-espresso.jpg" class="card-img-top" alt="Coffee 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Espresso</h5>
+                                <p class="card-text">Rich and bold espresso made from the finest beans.</p>
+                                <p class="card-text"><strong>70 Kč</strong></p>
+                                <a href="#" class="btn btn-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="images/coffee-cappuccino.jpg" class="card-img-top" alt="Coffee 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Cappuccino</h5>
+                                <p class="card-text">A perfect blend of espresso, steamed milk, and a velvety foam topping.</p>
+                                <p class="card-text"><strong>110 Kč</strong></p>
+                                <a href="#" class="btn btn-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="images/coffee-hotchocolate.jpg" class="card-img-top" alt="Coffee 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hot Chocolate</h5>
+                                <p class="card-text">Indulge in our rich and creamy hot chocolate, perfect for any time of the day.</p>
+                                <p class="card-text"><strong>100 Kč</strong></p>
+                                <a href="#" class="btn btn-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h2 class="display-5 fw-bold mb-4">Our Story</h2>
+                        <p class="lead">Founded in 2024, Coffee Haven was born from a passion for quality and community.</p>
+                        <p>We source beans directly from sustainable farms and roast them in-house to bring you the freshest flavors. Our baristas are trained in both classic techniques and innovative brewing methods.</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Direct trade coffee beans</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> House-made pastries daily</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Cozy workspace-friendly environment</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 about-img">
+                        <img src="./images/Cafe-interior.jpg" alt="Café Interior" class="rounded-3 shadow">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold">Visit Us</h2>
+                    <div class="section-divider mx-auto my-3"></div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="card h-100">
+                            <div class="card-body p-4">
+                                <h4 class="card-title">Contact information</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3"><i class="fas fa-map-marker-alt text-primary me-3"></i> 123 Brew Street, Coffeesville</li>
+                                    <li class="mb-3"><i class="fas fa-phone text-primary me-3"></i> (123) 456-7890</li>
+                                    <li class="mb-3"><i class="fas fa-envelope text-primary me-3"></i> hello@coffeehaven.com</li>
+                                    <li class="mb-3"><i class="fas fa-clock text-primary me-3"></i> Mon-Fri: 7am-7pm | Weekends: 8am-6pm</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <a href="#" class="text-decoration-none me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                    <a href="#" class="text-decoration-none me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                                    <a href="#" class="text-decoration-none"><i class="fab fa-twitter fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <h4 class="card-title mb-4">Send a Message</h4>
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
     
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
